@@ -324,4 +324,13 @@ public abstract class ComboBoxBase<TComponent extends ComboBoxBase<TComponent, T
         return addListener(CustomValueSetEvent.class,
                 (ComponentEventListener) listener);
     }
+
+    /**
+     * Whether the item is currently selected in the combo box.
+     *
+     * @param item
+     *            the item to check
+     * @return {@code true} if the item is selected, {@code false} otherwise
+     */
+    protected abstract boolean isSelected(TItem item);
 }
